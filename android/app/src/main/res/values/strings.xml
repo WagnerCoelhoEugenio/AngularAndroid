@@ -1,14 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">myapp</string>
-    <string name="title_activity_main">myapp</string>
-    <string name="package_name">com.myapp.myapp</string>
-    <string name="custom_url_scheme">com.myapp.myapp</string>
-    
-    
-    <string name="facebook_app_id">350940197858192</string>
-    
+  <string name="app_name">meuapp</string>
+  <string name="title_activity_main">meuapp</string>
+  <string name="package_name">com.meuapp.meuapp</string>
+  <string name="custom_url_scheme">com.meuapp.meuapp</string>
 
-
-
+  <string name="facebook_app_id">350940197858192</string>
+  <string name="fb_login_protocol_scheme">fb74245386749642</string>
 </resources>

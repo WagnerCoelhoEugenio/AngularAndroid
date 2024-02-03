@@ -3,12 +3,16 @@ import { FacebookLoginResponse, FacebookLogin } from '@capacitor-community/faceb
 import { HTTP } from '@awesome-cordova-plugins/http/ngx';
 import { Filesystem, FilesystemDirectory, FilesystemEncoding } from '@capacitor/filesystem';
 
+
+
 @Component({
   selector: 'app-facebook',
   templateUrl: './facebook.page.html',
   styleUrls: ['./facebook.page.scss'],
 })
 export class FacebookPage implements OnInit {
+
+
 
   token: any;
 
@@ -31,7 +35,7 @@ export class FacebookPage implements OnInit {
       console.log('resp = ', res);
       let final = JSON.parse(res.data);
 
-      // Exemplo de escrita em um arquivo usando o Filesystem
+
       const content = JSON.stringify(final);
       const fileName = 'userData.json';
 
@@ -43,9 +47,9 @@ export class FacebookPage implements OnInit {
           encoding: FilesystemEncoding.UTF8,
         });
 
-        console.log('Arquivo gravado com sucesso!');
+        console.log('File saved successfully!');
       } catch (error) {
-        console.error('Erro ao gravar o arquivo:', error);
+        console.error('Error while saving the file:', error);
       }
     });
   }
